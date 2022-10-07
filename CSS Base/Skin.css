@@ -33,6 +33,7 @@ a:hover {
 .btn_edit{
     color: #1f1f25;
     margin-right: -10px;
+    font-size: 23px;
 }
 .banner{
     margin-right: -10px;
@@ -143,5 +144,15 @@ a:hover {
 .editores{
     display: flex;
     justify-content: space-between;
-    margin-right: 10px;
+    margin-right: 20px;
+}
+
+.editores__icon{
+    width:45px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+#localidad{
+    display: inline;
 }
