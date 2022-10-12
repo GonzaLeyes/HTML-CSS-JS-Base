@@ -1,1 +1,23 @@
-<p>header works!</p>
+<div class="sector">
+    <!--Banner con una foto en grande-->
+    <div class="banner">
+        <img src="../../../assets/banner2.jpg" id="ban" alt="Banner" title="Banner" >
+    </div>
+    <div class="sector__caja">
+        <img id="perfil" src="../../../assets/perfil.jpg" alt="Foto de perfil" style="width: 150px;height: 150px;">
+        <a href="#" class="btn_edit" onclick="editarPerfil()"><i class="fa-solid fa-square-pen"></i></a>
+        <div class="sector__caja--nombre">
+            <div class="editores">
+                <h2 id="nombre-completo"><b>Leyes Gonzalo Nicolas</b></h2>
+                <a href="#" class="btn_edit" onclick="editarAcercaDe()"><i class="fa-solid fa-square-pen"></i></a>
+            </div>
+                <input type="text" class="edit" id="edit-nombre" oninput="registrarNombre(this.value)">
+                <h3 id="titulo">Full Stack Developed Jr.</h3>
+                <input type="text" class="edit" id="edit-titulo" oninput="registrarTitulo(this.value)">
+                <!--Desplegar un cuadrito cuando se presione informacion con Link Linkedin y Link mail-->
+                <p id="localidad">San Miguel, Buenos Aires, Argentina </p> <a href="https://www.linkedin.com/in/gonzalo-leyes-263b3a17a/" target="_blank">
+                    - Información de contacto</a>
+                <input type="text" class="edit" id="edit-localidad" oninput="registrarLocalidad(this.value)">
+        </div>
+    </div>
+</div>
