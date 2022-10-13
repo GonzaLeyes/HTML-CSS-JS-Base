@@ -1,6 +1,6 @@
 <!--Seccion Skills-->
 <!--El nivel de las Skills se podria seleccionar y mostrar con una barra-->
-<div class="sector">
+<!--<div class="sector">
     <div class="sector__caja">
         <div class="editores">
             <h2 class="sector__title">Skills</h2>
@@ -86,6 +86,134 @@
                 </div>
             </div>
             <p class="nivel">Basico</p>
+        </div>
+    </div>
+</div>-->
+
+<div class="sector">
+    <div class="sector__caja row">
+        <div class="editores col-12 ajuste">
+            <h2 class="sector__title">Skills</h2>
+            <a href="#" class="btn_edit skill" onclick="agregarSkill()"><i class="fa-solid fa-plus"></i></a>
+        </div>
+
+        <div class="sector__caja--item col-4 ajuste2">
+            <div class="editores">
+                <h4>HTML</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" onclick="editarEdu()"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" onclick="eliminarEdu()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>						
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Intermedio</div>
+            </div>
+            <br>
+        </div>
+        <div class="sector__caja--item col-4 ajuste2">
+            <div class="editores">
+                <h4>CSS</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" onclick="editarEdu()"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" onclick="eliminarEdu()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>						
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Intermedio</div>
+            </div>
+            <br>
+        </div>
+        <div class="sector__caja--item col-4 ajuste2">
+            <div class="editores">
+                <h4>Microsoft Excel</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" onclick="editarEdu()"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" onclick="eliminarEdu()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>						
+                </div>
+            </div>
+        
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Avanzado</div>
+            </div>
+            <br>
+        </div>
+        <div class="sector__caja--item col-4 ajuste2">
+            <div class="editores">
+                <h4>Java</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" onclick="editarEdu()"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" onclick="eliminarEdu()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>						
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Intermedio</div>
+            </div>
+            <br>
+        </div>
+        <div class="sector__caja--item col-4 ajuste2">
+            <div class="editores">
+                <h4>Python</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" onclick="editarEdu()"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" onclick="eliminarEdu()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>						
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Intermedio</div>
+            </div>
+            <br>
+        </div>
+        <div class="sector__caja--item col-4 ajuste2">
+            <div class="editores">
+                <h4>JavaScript</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" onclick="editarEdu()"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" onclick="eliminarEdu()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>						
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Intermedio</div>
+            </div>
+            <br>
+        </div>
+        <div class="sector__caja--item col-4 ajuste2">
+            <div class="editores">
+                <h4>SQL</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" onclick="editarEdu()"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" onclick="eliminarEdu()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>						
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Intermedio</div>
+            </div>
+            <br>
+        </div>
+        <div class="sector__caja--item col-4 ajuste2">
+            <div class="editores">
+                <h4>Angular</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" onclick="editarEdu()"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" onclick="eliminarEdu()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>						
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Intermedio</div>
+            </div>
+            <br>
+        </div>
+        <div class="sector__caja--item col-4 ajuste2">
+            <div class="editores">
+                <h4>Spring Boot</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" onclick="editarEdu()"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" onclick="eliminarEdu()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>						
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Intermedio</div>
+            </div>
+            <br>
         </div>
     </div>
 </div>
