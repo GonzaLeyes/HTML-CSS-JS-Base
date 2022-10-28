@@ -4,8 +4,8 @@
         <img src="../../../assets/banner2.jpg" id="ban" alt="Banner" title="Banner" >
     </div>
     <div class="sector__caja">
-        <img id="perfil" src="../../../assets/perfil.jpg" alt="Foto de perfil" style="width: 150px;height: 150px;">
-        <a href="#" class="btn_edit" onclick="editarPerfil()"><i class="fa-solid fa-square-pen"></i></a>
+        <img id="perfil" src={{persona.img}} alt="Foto de perfil" style="width: 150px;height: 150px;">
+        <a href="#" class="btn_edit" routerLink="/editheader/1" *ngIf="isLogged"><i class="fa-solid fa-square-pen"></i></a>
         <div class="sector__caja--nombre">
             <div class="editores">
                 <h2 id="nombre-completo"><b>{{persona.apellido}} {{persona.nombre}}</b></h2>
@@ -14,6 +14,7 @@
                 <input type="text" class="edit" id="edit-nombre" oninput="registrarNombre(this.value)">
                 <h3 id="titulo">Full Stack Developed Jr.</h3>
                 <input type="text" class="edit" id="edit-titulo" oninput="registrarTitulo(this.value)">
+                <p id="descripcion">{{persona.descripcion}}</p> 
                 <!--Desplegar un cuadrito cuando se presione informacion con Link Linkedin y Link mail-->
                 <p id="localidad">San Miguel, Buenos Aires, Argentina </p> <a href="https://www.linkedin.com/in/gonzalo-leyes-263b3a17a/" target="_blank">
                     - Información de contacto</a>

@@ -12,7 +12,8 @@
                 <li><a class="navbar__enlace" href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a class="navbar__enlace" href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
                 <li><a class="navbar__enlace" href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><button class="btn btn-dark" (click)="login()">Login</button></li>
+                <li><button class="btn btn-dark" (click)="login()" *ngIf="!isLogged">Login</button></li>
+                <li><button class="btn btn-dark" (click)="onLogOut()" *ngIf="isLogged">LogOut</button></li>
             </ul>
         </div>
     </nav>

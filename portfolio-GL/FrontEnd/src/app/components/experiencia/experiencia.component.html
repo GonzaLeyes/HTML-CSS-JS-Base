@@ -1,4 +1,5 @@
 <!--Seccion Experiencia-->
+<!--
 <div class="sector">
     <div class="sector__caja">
         <div class="editores">
@@ -13,8 +14,9 @@
                 <a href="#" class="btn_edit" onclick="eliminarExp()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>
                 </div>
             </div>
-            <p class="sector__caja--item-sub">Corven Motos · Jornada completa</p>
+            <p class="sector__caja--item-sub">Corven Motos · Jornada completa</p>-->
             <!--Ponerlo en gris-->
+            <!--
             <p>Creador de reportes de todas las unidades de negocio,
                 encargado de la administración de permisos de importación.</p>
         </div>
@@ -26,8 +28,9 @@
                 <a href="#" class="btn_edit" onclick="eliminarExp()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>
                 </div>
             </div>
-            <p class="sector__caja--item-sub">Maxiconsumo S.A. · Jornada parcial</p>
+            <p class="sector__caja--item-sub">Maxiconsumo S.A. · Jornada parcial</p>-->
             <!--Ponerlo en gris-->
+            <!--
             <p>Encargado de la oficina de ventas, atención al cliente,
                 coordinación de pedidos web y reparto de mercadería.</p>
         </div>
@@ -39,8 +42,9 @@
                 <a href="#" class="btn_edit" onclick="eliminarExp()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>
                 </div>
             </div>
-            <p class="sector__caja--item-sub">Libreria Borges · Jornada parcial</p>
+            <p class="sector__caja--item-sub">Libreria Borges · Jornada parcial</p>-->
             <!--Ponerlo en gris-->
+            <!--
             <p>Encargado de atención al cliente, venta de indumentaria y artículos de librería.</p>
         </div>
         <div class="sector__caja--item">
@@ -51,10 +55,49 @@
                     <a href="#" class="btn_edit" onclick="eliminarExp()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>
                 </div>
             </div>
-            <p class="sector__caja--item-sub">Escuela Integral Jorge Luis Borges</p>
+            <p class="sector__caja--item-sub">Escuela Integral Jorge Luis Borges</p>-->
             <!--Ponerlo en gris-->
+            <!--
             <p>Encargado de biblioteca escolar.
                 Encargado del mantenimiento de las computadoras del colegio. Resolución de problemas.</p>
+        </div>
+        <div class="sector__caja--item" *ngFor="let Experiencia of expe">
+            <div class="editores">
+                <h4>{{Experiencia.nombreE}}</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" onclick="editarExp()"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" onclick="eliminarExp()"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>
+                </div>
+            </div>
+            <p class="sector__caja--item-sub">{{Experiencia.descripcionE}}</p>-->
+            <!--Ponerlo en gris-->
+            <!--
+            <p>Descripcion de Prueba.</p>
+        </div>
+    </div>
+</div>
+-->
+
+<!--Prueba con ng-->
+<div class="sector">
+    <div class="sector__caja">
+        <div class="editores">
+            <h2 class="sector__title">Experiencia</h2>
+            <a href="#" class="btn_edit" routerLink="/nuevaexp" *ngIf="isLogged"><i class="fa-solid fa-plus"></i></a>
+        </div>
+
+
+        <div class="sector__caja--item" *ngFor="let Experiencia of expe">
+            <div class="editores">
+                <h4>{{Experiencia.nombreE}}</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" (click)="delete(Experiencia.id)" *ngIf="isLogged"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>
+                </div>
+            </div>
+            <p class="sector__caja--item-sub">{{Experiencia.descripcionE}}</p>
+            <!--Ponerlo en gris-->
+            <!--<p>{{Experiencia.descripcionE}}</p>-->
         </div>
     </div>
 </div>

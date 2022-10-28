@@ -1,4 +1,5 @@
 <!--Seccion Edudacion-->
+<!--
 <div class="sector">
     <div class="sector__caja">
         <div class="editores">
@@ -34,6 +35,28 @@
                 </div>
             </div>
             <p class="sector__caja--item-sub">Universidad Tecnologica Nacional</p>
+        </div>
+    </div>
+</div>-->
+
+<!--Prueba con ng-->
+<div class="sector">
+    <div class="sector__caja">
+        <div class="editores">
+            <h2 class="sector__title">Educación</h2>
+            <a href="#" class="btn_edit" routerLink="/nuevaedu" *ngIf="isLogged"><i class="fa-solid fa-plus"></i></a>
+        </div>
+
+
+        <div class="sector__caja--item" *ngFor="let Educacion of educacion">
+            <div class="editores">
+                <h4>{{Educacion.nombreE}}</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" routerLink="/editedu/{{Educacion.id}}" *ngIf="isLogged"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" (click)="delete(Educacion.id)" *ngIf="isLogged"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>
+                </div>
+            </div>
+            <p class="sector__caja--item-sub">{{Educacion.descripcionE}}</p>
         </div>
     </div>
 </div>

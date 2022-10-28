@@ -9,10 +9,13 @@
     </div>-->
     <br>
     <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario">
-      <input type="password" id="password" class="fadeIn third" name="login" placeholder="Contraseña">
-      <input type="submit" class="fadeIn fourth" value="Log In">
+
+    <form f="ngForm" (ngSubmit)="onLogin()" novalidate >
+        <input type="text" id="nombreUsuario" name="nombreUsuario" class="fadeIn second form-control form-control-lg" 
+          placeholder="Usuario" [(ngModel)]="nombreUsuario" required>
+        <input type="password" id="password" name="login" class="fadeIn third form-control form-control-lg"
+          placeholder="Contraseña" [(ngModel)]="password" required>
+        <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
 
     <!-- Remind Passowrd -->
