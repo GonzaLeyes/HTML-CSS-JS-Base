@@ -1,13 +1,13 @@
-package com.portfolio.PortfolioGLSP;
+package com.portfolio.portfolioGLSP;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PortfolioGlSpApplication {
+public class PortfolioGLSPApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PortfolioGlSpApplication.class, args);
+		SpringApplication.run(PortfolioGLSPApplication.class, args);
 	}
 
 }
